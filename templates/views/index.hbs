@@ -33,9 +33,6 @@
                                 <input class="button is-info" type="submit" autocomplete='off' value='Add City'>
                             </div>
                         </div>
-                        {{!-- {% if message %}
-                        <div class="notification {{ message_class }}">{{ message }}</div>
-                    {% endif %} --}}
                     </form>
                 </div>
             </div>
@@ -67,7 +64,7 @@
                             </div>
                             <div class="media-right">
                                 <form method="POST" action='delete_city/{{city}}'>
-                                    <a>
+                                    <a href>
                                         <input type='submit' class="delete">
                                     </a>
                                 </form>

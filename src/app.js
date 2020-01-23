@@ -1,10 +1,10 @@
 const express = require('express')
 const app = express()
 const hbs = require('hbs')
-require('./db/mongoose.js')
+// require('./db/mongoose.js')
 const path = require('path')
 const router = require('./router/router.js')
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 
 // Define path for express config

@@ -1,2 +1,4 @@
-node_modules/
-config
+node_modules
+src/db
+src/model
+src/controller/controller.js
