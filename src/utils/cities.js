@@ -55,8 +55,8 @@ const getCity = (name) => {
 
 const getCityUrl = () => {
     return new Promise((resolve, reject) => {
-        urlPrefix = `https://api.openweathermap.org/data/2.5/weather?q=`
-        urlSurfix = `&units=metric&appid=ebe66a355c7e37e84f393b83f4d2e1a6`
+        urlPrefix = process.env.urlPrefix
+        urlSurfix = process.env.urlSurfix
         const res = []
         cities.forEach(city => {
             res.push(urlPrefix.concat(city.name, urlSurfix))
